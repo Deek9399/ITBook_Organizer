@@ -1,0 +1,29 @@
+body{
+  background-image: url(https://www.theindianwire.com/wp-content/uploads/2018/04/books.jpg);
+    position: absolute;
+  }
+  div#pageMiddle {
+    width: 1000px;
+    margin: 20px 250px;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+    top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(74,22,5);
+    color:white;
+    
+}
+h1,h2 {
+    font-size: 60px;
+    text-shadow: 0px 0px 10px black;
+  	text-transform:capitalize;
+}  
+
+h2:hover {
+    
+    text-shadow: 0px 0px 20px blue;
+  	
+  
+}  

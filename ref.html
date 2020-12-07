@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOOK ORGANIZER</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+  	<style>
+      #head {
+    padding-left: 400px;
+    color: white;
+}
+    
+    h1, h2 {
+    font-size: 60px;
+    text-shadow: 0px 0px 10px grey;
+    text-transform: capitalize;
+    text-align: center;
+}
+      #search {
+    padding-left: 400px;
+    width: 700px;
+}
+      #b {
+    width: 600px;
+    margin-bottom: 20px;
+    height: 25px;
+    border-radius: 20px;
+    padding-left: 10px;
+    box-shadow: 0px 0px 10px grey;
+}
+      #sbtn {
+    border-radius: 10px;
+}
+      
+      #section_result {
+    padding-left: 300px;
+    margin: 20px 300px;
+    background-color: rgb(74,22,5);
+    border-radius: 20px;
+    padding-top: 20px;
+    color: white;
+        display:none;
+}
+  </style>
+	
+</head>
+
+<body>
+	<header id="head">
+		<h2>book search</h2>
+	</header>
+	<div id="search">
+		<!-- <form id="demo-2"> -->
+			<!-- <div class="input-field"> -->
+				<input type="search" id="b">
+				
+			<!-- </div> -->
+			<br>
+			<input type="button" onclick="abc()" value="Search" id="sbtn">
+		<!-- </form> -->
+		
+	</div>
+
+<section id="section_result">
+	<div id="result">
+	</div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+<script>
+var input = document.getElementById("b");
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("sbtn").click();
+    }
+});
+</script>
+
+
+
+
+</body>
+</html>
